@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <form class="body" onsubmit="App.handleSubmit(event)">
+        <table>
+           <thead>
+                <tr rowspan="2">
+                    <th>Đăng ký CV</th>
+                </tr>
+           </thead>
+
+           <tbody>
+                <tr>
+                    <td>
+                        Họ và tên
+                    </td>
+                    <td>
+                        <input type="text" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Địa chỉ
+                    </td>
+                    <td>
+                        <input type="text" id="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Điện Thoại
+                    </td>
+                    <td>
+                        <input type="text" id="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type="text" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nghề nghiệp
+                    </td>
+                    <td>
+                        <input type="text" id="job">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ảnh đại diện
+                    </td>
+                    <td>
+                        <input type="file" id="avatar">
+                    </td>
+                </tr>
+                    <td>
+                        Giới thiệu
+                    </td>
+                    <td>
+                        <textarea id="detail"></textarea>
+                    </td>
+                <tr>
+                    <td>
+                        Kinh nghiệm làm việc
+                    </td>
+                    <td>
+                        <table>
+                           <tbody class="job-list">
+
+                           </tbody>
+
+
+                            <tfoot>
+                               <tr>
+                                    <td>
+                                        <div class="add" onclick='App.addJobInput()'>Thêm</div>
+                                    </td>
+                               </tr>
+                            </tfoot>
+                                
+                        </table>
+                   </td>
+    
+                </tr>
+           </tbody>
+
+           <tfoot>
+                <tr>
+                    <td>
+                        <button>Đăng kí</button>
+                    </td>
+                </tr>
+           </tfoot>
+
+        </table>
+       
+    </form>
+    <script src="/src/index.js"></script>
+</body>
+</html>
